@@ -4,9 +4,9 @@ Implementasi praktikum Pemrograman Berbasis Objek (PBO) menggunakan PHP, MySQL, 
 
 ## Identitas
 
-- Nama:
-- NIM:
-- Kelas:
+- Nama: Rasya Akmal Sakhi
+- NIM: H1101251041
+- Kelas: A
 - Program Studi: Sistem Informasi
 - Mata Kuliah: Pemrograman Berbasis Objek (PBO)
 - Universitas: Universitas Tanjungpura
