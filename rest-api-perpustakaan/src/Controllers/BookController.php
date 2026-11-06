@@ -53,12 +53,23 @@ class BookController
         ]);
     }
 
-    // POST: Debug pembacaan Request
+    // POST: Menambahkan buku
     public function store(Request $request): void
     {
-        Response::json([
-            'debug_body' => $request->getBody()
-        ]);
+        try {
+            $book = $this->service->create($request->getBody());
+
+            Response::json([
+                'success' => true,
+                'message' => 'Buku berhasil ditambahkan',
+                'data' => $book
+            ], 201);
+        } catch (Throwable $e) {
+            Response::json([
+                'success' => false,
+                'message' => $e->getMessage()
+            ], 422);
+        }
     }
 
     // PUT: Mengubah buku
